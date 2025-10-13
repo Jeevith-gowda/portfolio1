@@ -73,8 +73,9 @@ SKILLS:
 - Tools: Git, REST APIs, Spring Boot, Tableau, Power BI
 
 CONTACT:
-- Email: jdoddali@charlotte.edu
-- LinkedIn: linkedin.com/in/jeevith-d-r
+- Email: jdoddali@charlotte.edu and jeevithdr@gmail.com
+- Phone: +1 8574215706
+- LinkedIn: https://www.linkedin.com/in/jeevith-doddalingegowda-rama-93a86a209/
 - GitHub: github.com/Jeevith-gowda
 - Location: Charlotte, North Carolina, US
 
