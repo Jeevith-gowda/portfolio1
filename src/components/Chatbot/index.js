@@ -8,6 +8,8 @@ import './index.scss'
 const Chatbot = () => {
   console.log('🔑 API Key loaded:', !!process.env.REACT_APP_GROQ_API_KEY)
   const [isOpen, setIsOpen] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(true)
+
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
@@ -107,64 +109,83 @@ Keep responses concise (2-3 sentences), helpful, and encourage visitors to explo
   }
 
   return (
-    <>
-      {/* Chat Button */}
-      <div 
-        className={`chat-button ${isOpen ? 'hidden' : ''}`}
-        onClick={() => setIsOpen(true)}
-      >
-        <FontAwesomeIcon icon={faCommentDots} />
-      </div>
-
-      {/* Chat Window */}
-      {isOpen && (
-        <div className="chat-window">
-          <div className="chat-header">
-            <div className="header-content">
-              <FontAwesomeIcon icon={faCommentDots} />
-              <span>Chat with AI Assistant</span>
-            </div>
-            <button onClick={() => setIsOpen(false)} className="close-btn">
-              <FontAwesomeIcon icon={faTimes} />
-            </button>
-          </div>
-
-          <div className="chat-messages">
-            {messages.map((msg, idx) => (
-              <div key={idx} className={`message ${msg.role}`}>
-                <div className="message-content">
-                  {msg.content}
-                </div>
-              </div>
-            ))}
-            {isLoading && (
-              <div className="message assistant">
-                <div className="message-content typing">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            )}
-            <div ref={messagesEndRef} />
-          </div>
-
-          <form className="chat-input" onSubmit={sendMessage}>
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask me anything...."
-              disabled={isLoading}
-            />
-            <button type="submit" disabled={isLoading || !input.trim()}>
-              <FontAwesomeIcon icon={faPaperPlane} />
-            </button>
-          </form>
+  <>
+    {/* Chat Button */}
+    <div 
+      className={`chat-button ${isOpen ? 'hidden' : ''}`}
+      onClick={() => {
+        setIsOpen(true)
+        setShowTooltip(false)
+      }}
+    >
+      <FontAwesomeIcon icon={faCommentDots} />
+      
+      {/* Tooltip */}
+      {showTooltip && !isOpen && (
+        <div className="chat-tooltip">
+          👋 Hi! Ask me anything about Jeevith!
+          <button 
+            className="tooltip-close"
+            onClick={(e) => {
+              e.stopPropagation()
+              setShowTooltip(false)
+            }}
+          >
+            ×
+          </button>
         </div>
       )}
-    </>
-  )
+    </div>
+
+    {/* Chat Window */}
+    {isOpen && (
+      <div className="chat-window">
+        <div className="chat-header">
+          <div className="header-content">
+            <FontAwesomeIcon icon={faCommentDots} />
+            <span>Chat with AI Assistant</span>
+          </div>
+          <button onClick={() => setIsOpen(false)} className="close-btn">
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+        </div>
+
+        <div className="chat-messages">
+          {messages.map((msg, idx) => (
+            <div key={idx} className={`message ${msg.role}`}>
+              <div className="message-content">
+                {msg.content}
+              </div>
+            </div>
+          ))}
+          {isLoading && (
+            <div className="message assistant">
+              <div className="message-content typing">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          )}
+          <div ref={messagesEndRef} />
+        </div>
+
+        <form className="chat-input" onSubmit={sendMessage}>
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Ask me anything...."
+            disabled={isLoading}
+          />
+          <button type="submit" disabled={isLoading || !input.trim()}>
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </button>
+        </form>
+      </div>
+    )}
+  </>
+)
 }
 
 export default Chatbot
