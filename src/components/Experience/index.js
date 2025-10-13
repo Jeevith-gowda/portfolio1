@@ -10,51 +10,41 @@ import './index.scss'
 const workExperience = [
   {
     id: 1,
-    company: 'Mak Design Private Limited',
-    companyUrl: 'https://www.makdesign.in/',
-    position: 'Software Development Engineer',
-    duration: 'May 2024 – Present',
-    location: 'Mumbai, Maharashtra (Remote)',
+    company: 'FundMyCrop',
+    companyUrl: 'https://fundmycrop.com/',
+    position: 'Data Scientist Intern',
+    duration: 'March 2024 – November 2024',
+    location: 'Karnataka, India',
     achievements: [
-      'Built a real-time notification module using Django and MongoDB, secured by end-to-end encryption, ensuring timely and confidential delivery of critical alerts to end-users.',
-      'Created a framework for performance analytics loading time, click event response time for maps rendered by different libraries using JavaScript and connected it to a React frontend.'
+      'Built time-series forecasting models using TensorFlow and ARIMA for anomaly detection in agritech data, enabling proactive identification of market trends and crop risks.',
+      'Performed feature engineering and exploratory data analysis (EDA) to support predictive models, improving pipeline efficiency and model accuracy.',
+      'Collaborated with cross-functional teams to translate business requirements into data-driven solutions, enhancing decision-making for agritech stakeholders.'
     ]
   },
   {
     id: 2,
-    company: 'Defence Research and Development Organisation (DRDO)',
-    companyUrl: 'https://www.drdo.gov.in/drdo/',
-    position: 'Software Development Engineer',
-    duration: 'May 2023 – May 2024',
-    location: 'Gwalior, Madhya Pradesh (Hybrid)',
+    company: 'Google Developer Groups',
+    companyUrl: 'https://gdg.community.dev/',
+    position: 'Digital Lead',
+    duration: 'January 2025 – March 2025',
+    location: 'Northeastern University, Boston',
     achievements: [
-      'Engineered a heavy-gas dispersion model (Java), with 92% predictive accuracy, enhancing hazard prediction capabilities for safety teams.',
-      'Designed and implemented a Java Swing GUI, validated through improved usability testing, to streamline and simplify end-user interactions.',
-      'Developed a 2D plotting tool in Python backed by a Flask API, enabling data visualization that improved decision-making clarity among project stakeholders.'
+      'Coordinated tech workshops and information sessions for 100+ students, fostering a collaborative learning environment and promoting technical skill development.',
+      'Streamlined communication strategies across multiple channels, improving event attendance and community engagement by organizing technical talks and networking events.',
+      'Managed digital presence and outreach efforts, strengthening the GDG community at Northeastern University.'
     ]
   },
   {
     id: 3,
-    company: 'Verified Network',
-    companyUrl: 'https://www.verified.network/',
-    position: 'DevOps Engineer — Contract',
-    duration: 'February 2023 — May 2023',
-    location: 'Switzerland (Remote)',
+    company: 'Nitte University',
+    companyUrl: 'https://nitte.edu.in/',
+    position: 'Undergraduate Teaching Assistant',
+    duration: 'March 2023 – January 2024',
+    location: 'Karnataka, India',
     achievements: [
-      'Redesigned the trading platform\'s core engine by implementing an order-matching system using IPFS Merkle DAG and IPFS pub-sub on a Node.js/Express.js server, reducing transaction times by 70% and increasing marketplace efficiency.',
-      'Achieved 90% test coverage by architecting comprehensive test suites with Chai and Mocha, ensuring robust code quality and reliability.',
-      'Engineered the CI/CD pipeline (GitHub Actions and AWS CodeDeploy) resulting in fully automated deployments and accelerating release cycles.'
-    ]
-  },
-  {
-    id: 4,
-    company: 'Metarootz',
-    companyUrl: 'https://www.metarootz.io/',
-    position: 'Software Development Engineer — Contract',
-    duration: 'December 2022 — February 2023',
-    location: 'Dubai, UAE (Remote)',
-    achievements: [
-      'Developed a social media platform using Node.js/Express.js, Next.js, and MongoDB, scaled it to 10,000+ active users, and integrated WebSocket-based voice/video calling to boost user engagement and interaction.'
+      'Mentored students in Deep Learning courses, leading discussions and supporting hands-on lab sessions to reinforce theoretical concepts with practical applications.',
+      'Provided one-on-one guidance to students on course projects, homework assignments, and exam preparation, improving overall class performance and understanding.',
+      'Assisted professors in curriculum development and grading, ensuring consistent educational standards and timely feedback for over 50 students.'
     ]
   }
 ]
@@ -73,7 +63,7 @@ const Experience = () => {
   return (
     <>
       <div className="container experience-page">
-        <div className="text-zone">
+        <div className="text-zone" >
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -82,9 +72,10 @@ const Experience = () => {
             />
           </h1>
           <p>
-            My professional journey spans across various industries and technologies,
-            from defense systems to trading platforms and social media applications.
-            Each role has contributed to my growth as a versatile software engineer.
+            My professional journey spans AI/ML engineering, data science, and 
+            education. From building predictive models in agritech to leading 
+            tech communities and mentoring students, each role has shaped my 
+            approach to solving real-world problems with technology.
           </p>
         </div>
 

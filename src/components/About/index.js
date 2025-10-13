@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react'
 import {
   faAws,
   faDocker,
-  faGitAlt,
-  faGolang,
   faJsSquare,
+  faNode,
   faPython,
+  faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
@@ -39,17 +39,25 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a DevOps and Full Stack Engineer with over 2 years of
-            experience, specializing in automating workflows, optimizing CI/CD
-            pipelines, and deploying intelligent systems. My expertise spans
-            across DevOps, full-stack, blockchain development, and aritificial
-            intelligence, with a strong foundation in security.
+            I'm a Computer Science Master's student at UNC Charlotte with a passion 
+            for building intelligent systems and scalable applications. My expertise 
+            spans AI/ML engineering, full-stack development, and distributed systems, 
+            with hands-on experience in LangChain, LangGraph, RAG pipelines, and the 
+            MERN stack.
           </p>
           <p>
-            I’m passionate about solving real-world problems through innovative
-            technology and continuously learning to stay ahead of industry
-            trends. Whether it's streamlining infrastructure or building
-            scalable applications, I bring a holistic approach to every project.
+            I've published IEEE research on melanoma detection using deep learning 
+            (Best Paper Award), built multi-agent LLM systems with vector databases, 
+            and worked as a Data Scientist Intern developing time-series forecasting 
+            models. Whether it's orchestrating intelligent agents, optimizing data 
+            pipelines with Apache Spark, or creating seamless user experiences, I 
+            bring a holistic approach to solving real-world problems.
+          </p>
+          <p>
+            Currently, I'm diving deep into advanced AI/ML workflows and building 
+            projects that bridge the gap between cutting-edge research and practical 
+            applications. I'm always eager to learn, collaborate, and tackle 
+            challenging problems that make an impact.
           </p>
         </div>
 
@@ -59,19 +67,19 @@ const About = () => {
               <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faAws} color="#F06529" />
+              <FontAwesomeIcon icon={faReact} color="#61DAFB" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faDocker} color="#28A4D9" />
+              <FontAwesomeIcon icon={faNode} color="#68A063" />
             </div>
             <div className="face4">
-              <FontAwesomeIcon icon={faGolang} color="#5ED4F4" />
-            </div>
-            <div className="face5">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faDocker} color="#0DB7ED" />
+            </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faAws} color="#FF9900" />
             </div>
           </div>
         </div>

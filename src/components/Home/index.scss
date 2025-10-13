@@ -90,3 +90,24 @@
   }
 }
 
+.particles-container {
+  position: absolute;
+  top: 45%;  // Start near the top
+  right: 0;
+  left: 70;
+  width: 55%;
+  height: 95%;  // Much taller - stretches almost full height
+  z-index: 0;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    opacity: 0.3;
+    top: 10%;
+    height: 100%;
+  }
+}
+
+.text-zone {
+  z-index: 1;
+  position: relative;
+}

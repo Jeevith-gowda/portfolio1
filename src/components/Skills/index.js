@@ -31,17 +31,18 @@ const Skills = () => {
             <br />
           </h1>
           <p>
-            I have a strong foundation in both development and operations, with
-            a focus on creating seamless, efficient systems. My experience
-            includes automating deployment processes, designing scalable
-            applications, and working with cloud technologies to deliver
-            reliable solutions.
+            I specialize in AI/ML engineering, data science, and full-stack development, 
+            with expertise in building intelligent systems using LangChain, LangGraph, 
+            and RAG pipelines. My data science foundation includes predictive modeling, 
+            time-series forecasting, feature engineering, and statistical analysis using 
+            TensorFlow, PyTorch, and Scikit-learn.
           </p>
           <p>
-            My skill set spans across DevOps, machine learning, full-stack
-            development, and cloud infrastructure. I’m committed to staying
-            updated with the latest advancements and continually refining my
-            expertise to tackle complex challenges effectively.
+            From orchestrating multi-agent LLM systems to building MERN stack applications, 
+            processing big data with Apache Spark and Hadoop, and developing machine learning 
+            models that drive business insights, I thrive at the intersection of AI, data 
+            science, and software engineering. I'm constantly exploring cutting-edge 
+            technologies and applying them to solve complex, real-world challenges.
           </p>
         </div>
 

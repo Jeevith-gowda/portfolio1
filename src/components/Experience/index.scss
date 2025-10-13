@@ -1,5 +1,14 @@
 .experience-page {
     .text-zone {
+        position: relative;
+        width: 40%;
+        padding-right: 5%;
+        margin-bottom: 40px;
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
         p {
             margin-bottom: 20px;
             color: #fff;
@@ -7,6 +16,7 @@
             font-family: sans-serif;
             font-weight: 300;
             max-width: 100%;
+            line-height: 1.6;
         }
     }
 }
@@ -14,10 +24,10 @@
 .experience-container {
     position: absolute;
     right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20%;
+    transform: none;
     width: 55%;
-    height: 80%;
+    height: 70%;
     overflow-y: auto;
     padding-right: 20px;
 
@@ -45,6 +55,7 @@
     position: relative;
     max-width: 100%;
     margin: 0 auto;
+    padding-top: 20px;
 
     /* Central line */
     &::before {
@@ -243,7 +254,13 @@
 }
 
 /* Responsive design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .experience-page .text-zone {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
     .experience-container {
         position: relative;
         right: auto;
@@ -253,6 +270,27 @@
         height: auto;
         margin-top: 20px;
         padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience-page .text-zone {
+        position: relative;
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .experience-container {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 0 20px;
+        overflow-y: visible;
     }
 
     .timeline {
@@ -276,14 +314,5 @@
             left: 5px !important;
             right: auto !important;
         }
-    }
-
-    .experience-page .text-zone {
-        position: relative;
-        left: auto;
-        top: auto;
-        transform: none;
-        width: 100%;
-        margin-bottom: 30px;
     }
 }

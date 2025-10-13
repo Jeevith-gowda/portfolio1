@@ -11,163 +11,129 @@ import './index.scss'
 const projects = [
   {
     id: 1,
-    title: 'Real-time Notification System',
-    description: 'Built a comprehensive real-time notification module using Django and MongoDB with end-to-end encryption for secure delivery of critical alerts.',
-    technologies: ['Django', 'MongoDB', 'WebSocket', 'End-to-End Encryption', 'Python'],
-    category: 'Backend Development',
+    title: 'Multi-Agent LLM System with LangGraph',
+    description: 'Built an intelligent agent orchestration system using LangGraph for workflow automation and state management, with RAG pipeline for context-aware responses.',
+    technologies: ['LangGraph', 'LangSmith', 'FAISS', 'Groq API', 'Docker', 'PostgreSQL', 'Python'],
+    category: 'AI/ML',
     status: 'Completed',
-    year: '2024',
-    company: 'Mak Design Private Limited',
+    year: '2025',
+    company: 'Personal Project',
     features: [
-      'Real-time delivery of notifications',
-      'End-to-end encryption for security',
-      'Scalable MongoDB backend',
-      'WebSocket integration for instant updates'
+      'Intelligent agent orchestration with LangGraph',
+      'RAG pipeline with FAISS vector storage',
+      'LangSmith tracing for debugging',
+      'Sub-second LLM inference with Groq API (llama-3.1-8b-instant)',
+      'Containerized deployment with Docker and PostgreSQL'
     ],
-    images: [], // Provision for multiple images
-    githubUrl: null, // Private project
-    liveUrl: null, // Private project
-    isPrivate: true
+    images: [],
+    githubUrl: 'https://github.com/Jeevith-gowda', // Update with actual repo
+    liveUrl: null,
+    isPrivate: false
   },
   {
     id: 2,
-    title: 'Performance Analytics Framework',
-    description: 'Created a comprehensive framework for tracking performance analytics including loading times and click event response times for map libraries, connected to a React frontend.',
-    technologies: ['JavaScript', 'React', 'Performance API', 'Data Visualization', 'Analytics'],
-    category: 'Frontend Development',
+    title: 'Distributed Data Processing Pipeline',
+    description: 'Built scalable data pipelines using Apache Spark and Hadoop MapReduce for big data analytics with containerized microservices.',
+    technologies: ['Apache Spark', 'Hadoop MapReduce', 'PySpark', 'Docker', 'PostgreSQL', 'Python'],
+    category: 'Data Engineering',
     status: 'Completed',
-    year: '2024',
-    company: 'Mak Design Private Limited',
+    year: '2025',
+    company: 'Personal Project',
     features: [
-      'Real-time performance monitoring',
-      'Map library performance comparison',
-      'React-based dashboard',
-      'Interactive data visualization'
+      'Scalable data pipelines with Apache Spark',
+      'Hadoop MapReduce for distributed computing',
+      'Containerized microservices with Docker',
+      'Optimized PostgreSQL queries',
+      'Jaccard Similarity for data deduplication'
     ],
     images: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/Jeevith-gowda', // Update with actual repo
     liveUrl: null,
-    isPrivate: true
+    isPrivate: false
   },
   {
     id: 3,
-    title: 'Heavy-Gas Dispersion Model',
-    description: 'Engineered a sophisticated heavy-gas dispersion model with 92% predictive accuracy, enhancing hazard prediction capabilities for safety teams.',
-    technologies: ['Java', 'Mathematical Modeling', 'Algorithm Design', 'Safety Systems'],
-    category: 'Scientific Computing',
-    status: 'Completed',
-    year: '2023',
-    company: 'DRDO',
+    title: 'Melanoma Detection Using Deep Learning',
+    description: 'IEEE published research with Best Paper Award. Developed CNN-based system to detect melanoma from dermoscopic images with 94% accuracy.',
+    technologies: ['TensorFlow', 'Keras', 'CNN', 'Python', 'Computer Vision', 'Medical Imaging'],
+    category: 'AI/ML',
+    status: 'Published',
+    year: '2024',
+    company: 'Research Project',
     features: [
-      '92% predictive accuracy',
-      'Advanced mathematical modeling',
-      'Safety team integration',
-      'Real-time hazard prediction'
+      '94% accuracy in melanoma detection',
+      'CNN-based deep learning architecture',
+      'Data augmentation for improved performance',
+      'Medical image analysis and preprocessing',
+      'IEEE Xplore publication - Best Paper Award'
     ],
     images: [],
     githubUrl: null,
-    liveUrl: null,
-    isPrivate: true
+    liveUrl: 'https://ieeexplore.ieee.org/', // Update with actual paper link
+    isPrivate: false
   },
   {
     id: 4,
-    title: 'Java Swing GUI Application',
-    description: 'Designed and implemented a user-friendly Java Swing GUI validated through usability testing to streamline end-user interactions.',
-    technologies: ['Java', 'Swing', 'GUI Design', 'Usability Testing', 'UX/UI'],
-    category: 'Desktop Application',
+    title: 'Customer Purchase Behavior Prediction',
+    description: 'Built predictive model using Random Forest and Logistic Regression to identify customer purchase intent with 15% improved accuracy.',
+    technologies: ['Scikit-learn', 'Random Forest', 'Logistic Regression', 'Pandas', 'NumPy', 'Matplotlib', 'Python'],
+    category: 'Data Science',
     status: 'Completed',
-    year: '2023',
-    company: 'DRDO',
+    year: '2025',
+    company: 'Personal Project',
     features: [
-      'Intuitive user interface',
-      'Validated through usability testing',
-      'Streamlined user interactions',
-      'Cross-platform compatibility'
+      'Predictive modeling with Random Forest',
+      'Logistic Regression for classification',
+      '15% improvement in predictive accuracy',
+      'Feature engineering and selection',
+      'Cross-validation for model optimization'
     ],
     images: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/Jeevith-gowda', // Update with actual repo
     liveUrl: null,
-    isPrivate: true
+    isPrivate: false
   },
   {
     id: 5,
-    title: '2D Data Visualization Tool',
-    description: 'Developed a Python-based 2D plotting tool backed by Flask API for enhanced data visualization and improved decision-making clarity.',
-    technologies: ['Python', 'Flask', 'Data Visualization', 'API Development', 'Charts'],
-    category: 'Data Visualization',
+    title: 'Full-Stack RAG Application',
+    description: 'Built a production-ready RAG (Retrieval Augmented Generation) application using the MERN stack with vector database integration for intelligent document search.',
+    technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'LangChain', 'FAISS', 'OpenAI API'],
+    category: 'Full Stack Development',
     status: 'Completed',
-    year: '2023',
-    company: 'DRDO',
+    year: '2025',
+    company: 'Personal Project',
     features: [
-      'Interactive 2D plotting',
-      'Flask API backend',
-      'Real-time data processing',
-      'Decision-making insights'
+      'MERN stack architecture',
+      'Document embedding and vector storage',
+      'Semantic search with FAISS',
+      'Real-time chat interface with streaming responses',
+      'JWT authentication and user management'
     ],
     images: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/Jeevith-gowda', // Update with actual repo
     liveUrl: null,
-    isPrivate: true
+    isPrivate: false
   },
   {
     id: 6,
-    title: 'IPFS Trading Platform Engine',
-    description: 'Redesigned trading platform core engine with IPFS Merkle DAG and pub-sub system, reducing transaction times by 70%.',
-    technologies: ['Node.js', 'Express.js', 'IPFS', 'Merkle DAG', 'Blockchain', 'Pub-Sub'],
-    category: 'Blockchain Development',
+    title: 'Real-Time Analytics Dashboard',
+    description: 'Developed an interactive analytics dashboard for visualizing large-scale datasets with real-time updates using React and D3.js.',
+    technologies: ['React', 'D3.js', 'Chart.js', 'Node.js', 'MongoDB', 'WebSocket', 'Express.js'],
+    category: 'Data Visualization',
     status: 'Completed',
-    year: '2023',
-    company: 'Verified Network',
+    year: '2024',
+    company: 'Personal Project',
     features: [
-      '70% reduction in transaction times',
-      'IPFS Merkle DAG implementation',
-      'Pub-sub messaging system',
-      'Enhanced marketplace efficiency'
+      'Real-time data visualization with D3.js',
+      'Interactive charts with Chart.js',
+      'WebSocket integration for live updates',
+      'RESTful API with Node.js and Express',
+      'Responsive design with modern UI/UX'
     ],
     images: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/Jeevith-gowda', // Update with actual repo
     liveUrl: null,
-    isPrivate: true
-  },
-  {
-    id: 7,
-    title: 'Automated CI/CD Pipeline',
-    description: 'Engineered comprehensive CI/CD pipeline using GitHub Actions and AWS CodeDeploy for fully automated deployments.',
-    technologies: ['GitHub Actions', 'AWS CodeDeploy', 'DevOps', 'Automation', 'Cloud'],
-    category: 'DevOps',
-    status: 'Completed',
-    year: '2023',
-    company: 'Verified Network',
-    features: [
-      'Fully automated deployments',
-      'GitHub Actions integration',
-      'AWS CodeDeploy implementation',
-      'Accelerated release cycles'
-    ],
-    images: [],
-    githubUrl: null,
-    liveUrl: null,
-    isPrivate: true
-  },
-  {
-    id: 8,
-    title: 'Social Media Platform',
-    description: 'Developed a scalable social media platform with WebSocket-based voice/video calling, serving 10,000+ active users.',
-    technologies: ['Node.js', 'Express.js', 'Next.js', 'MongoDB', 'WebSocket', 'WebRTC'],
-    category: 'Full Stack Development',
-    status: 'Completed',
-    year: '2022',
-    company: 'Metarootz',
-    features: [
-      '10,000+ active users',
-      'WebSocket voice/video calling',
-      'Scalable architecture',
-      'Real-time communication'
-    ],
-    images: [],
-    githubUrl: null,
-    liveUrl: null,
-    isPrivate: true
+    isPrivate: false
   }
 ]
 
@@ -203,9 +169,9 @@ const Projects = () => {
             />
           </h1>
           <p>
-            A showcase of my technical projects spanning various domains including
-            backend development, data visualization, blockchain, and DevOps. Each project
-            represents a solution to real-world challenges.
+            A showcase of my technical projects spanning AI/ML engineering, data science,
+            full-stack development, and distributed systems. Each project represents
+            innovative solutions to complex problems using cutting-edge technologies.
           </p>
           
           {/* Category Filter */}

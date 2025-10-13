@@ -27,26 +27,10 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
-    const email = form.current.email.value
-    const res = await verifyEmail(email)
-    if (!res) {
-      setLoading(false)
-      toast.error('Please enter a valid email address', {
-        position: 'bottom-center',
-        autoClose: 3500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: 'dark',
-      })
-      return
-    }
-
     let fullName = form.current.name.value
     let subject = form.current.subject.value
     let message = form.current.message.value
+    let email = form.current.email.value
 
     let firstName = fullName.split(' ')[0]
     firstName =
@@ -102,22 +86,6 @@ const Contact = () => {
       )
   }
 
-  const verifyEmail = async (email) => {
-    let res = await fetch(
-      `https://mailok-email-validation.p.rapidapi.com/verify?email=${email}`,
-      {
-        method: 'GET',
-        headers: {
-          'x-rapidapi-host': process.env.REACT_APP_RAPIDAPI_HOST,
-          'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY,
-        },
-      }
-    )
-
-    let data = await res.json()
-    return res.status === 200 && data.status === 'valid'
-  }
-
   return (
     <>
       <div className="container contact-page">
@@ -130,9 +98,10 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I’m open to new opportunities and collaborations! If you’re looking
-            for someone who can bring fresh ideas and deliver impactful results,
-            let’s get in touch!
+            I'm actively seeking opportunities in AI/ML engineering, full-stack 
+            development, and data science. Whether you're looking for a collaborator 
+            on innovative projects, have an exciting role to discuss, or just want 
+            to connect about tech, I'd love to hear from you!
           </p>
 
           <div className="contact-form">
@@ -180,18 +149,19 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
           <div className="info-map">
-            Sudip Banerjee
+            Jeevith Doddalingegowda Rama
             <br />
-            Kolkata, <br />
-            West Bengal, <br />
-            India
+            Charlotte, North Carolina
             <br />
+            United States
+            <br />
+            <span>jdoddali@charlotte.edu</span>
           </div>
-          <MapContainer center={[22.56263, 88.36304]} zoom={13}>
+          <MapContainer center={[35.2271, -80.8431]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[22.56263, 88.36304]}>
+            <Marker position={[35.2271, -80.8431]}>
               <Popup>
-                Sudip lives here, come over for a cup of coffee :{')'}
+                Jeevith is based here in Charlotte. Let's connect!
               </Popup>
             </Marker>
           </MapContainer>
