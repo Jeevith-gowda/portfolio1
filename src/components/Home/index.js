@@ -7,6 +7,7 @@ import { loadSlim } from 'tsparticles-slim'
 
 import LogoTitle from '../../assets/images/logo-j.png'
 import AnimatedLetters from '../AnimatedLetters'
+import Chatbot from '../Chatbot'
 import './index.scss'
 
 const Home = () => {
@@ -82,8 +83,7 @@ const Home = () => {
               interactivity: {
                 events: {
                   onClick: {
-                    enable: true,
-                    mode: 'push',
+                    enable: false,
                   },
                   onHover: {
                     enable: true,
@@ -91,9 +91,6 @@ const Home = () => {
                   },
                 },
                 modes: {
-                  push: {
-                    quantity: 2,
-                  },
                   grab: {
                     distance: 140,
                     links: {
@@ -110,12 +107,12 @@ const Home = () => {
                   color: '#22c55e',
                   distance: 150,
                   enable: true,
-                  opacity: 0.4,
-                  width: 1,
+                  opacity: 0.5,
+                  width: 1.5,
                 },
                 move: {
                   enable: true,
-                  speed: 1,
+                  speed: 1.5,
                   direction: 'none',
                   random: false,
                   straight: false,
@@ -127,16 +124,16 @@ const Home = () => {
                   density: {
                     enable: true,
                   },
-                  value: 80,
+                  value: 120,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 0.6,
                 },
                 shape: {
                   type: 'circle',
                 },
                 size: {
-                  value: { min: 1, max: 3 },
+                  value: { min: 2, max: 4 },
                 },
               },
               detectRetina: true,
@@ -146,6 +143,7 @@ const Home = () => {
       </div>
 
       <Loader type="pacman" />
+      <Chatbot />
     </>
   )
 }
