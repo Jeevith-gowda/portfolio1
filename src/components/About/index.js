@@ -40,24 +40,24 @@ const About = () => {
           </h1>
           <p>
             I'm a Computer Science Master's student at UNC Charlotte with a passion 
-            for building intelligent systems and scalable applications. My expertise 
+            for building intelligent systems and scalable<br></br> applications. My expertise 
             spans AI/ML engineering, full-stack development, and distributed systems, 
-            with hands-on experience in LangChain, LangGraph, RAG pipelines, and the 
+            with hands-on<br></br> experience in LangChain, LangGraph, RAG pipelines, and the 
             MERN stack.
           </p>
           <p>
             I've published IEEE research on melanoma detection using deep learning 
-            (Best Paper Award), built multi-agent LLM systems with vector databases, 
+            (Best Paper Award), built multi-agent LLM <br></br>systems with vector databases, 
             and worked as a Data Scientist Intern developing time-series forecasting 
-            models. Whether it's orchestrating intelligent agents, optimizing data 
-            pipelines with Apache Spark, or creating seamless user experiences, I 
+            models.<br></br> Whether it's orchestrating intelligent agents, optimizing data 
+            pipelines with Apache Spark, or creating seamless user<br></br> experiences, I 
             bring a holistic approach to solving real-world problems.
           </p>
           <p>
             Currently, I'm diving deep into advanced AI/ML workflows and building 
-            projects that bridge the gap between cutting-edge research and practical 
+            projects that bridge the gap between<br></br> cutting-edge research and practical 
             applications. I'm always eager to learn, collaborate, and tackle 
-            challenging problems that make an impact.
+            challenging problems<br></br> that make an impact.
           </p>
         </div>
 

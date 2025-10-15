@@ -14,8 +14,8 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = 'eevith'.split('')
-  const jobArray = 'AI/ML Engineer & Full Stack Developer'.split('')
-  const interestArray = 'LangGraph | MERN Stack | Data Science'.split('')
+  const jobArray = 'AI/ML Engineer & Full\nStack Developer'.split('')
+  const interestArray = 'LangGraph | MERN\nStack| Data Science'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -58,7 +58,7 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Building Intelligent Systems | Scaling AI Workflows | Crafting Seamless User Experiences
+            Building Intelligent Systems | Scaling AI Workflows | Enhancing User Experiences
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME

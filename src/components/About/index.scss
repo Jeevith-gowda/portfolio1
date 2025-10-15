@@ -1,5 +1,106 @@
+.container.about-page {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+/* Strong desktop-only overrides to remove large gap between text and cube */
+.container.about-page .text-zone {
+  left: 9% !important;
+  top: 12% !important;
+  transform: none !important;
+  width: 75% !important; /* allow text to span further right */
+  display: block !important;
+}
+
+.container.about-page .stage-cube-cont {
+  width: 24% !important; /* make cube container narrower */
+  right: 2% !important; /* move cube slightly left into visible area */
+}
+
+.about-page {
+  .text-zone {
+    position: absolute;
+    left: 8%;
+    top: 12%; /* place content near top for desktop layout */
+    transform: none;
+  width: 65%; /* allow content to span further right */
+    display: block;
+    max-height: 90%;
+    
+    h1 {
+      color: #00ff7f;
+      font-size: 48px;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      margin-bottom: 25px;
+      margin-top: 0;
+
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #00ff7f;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -30px;
+        left: -15px;
+        opacity: 0.6;
+      }
+
+      &:after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #00ff7f;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -15px;
+        bottom: -25px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+    
+    p {
+      margin-bottom: 18px;
+      color: #fff;
+      font-size: 14px;
+      font-family: sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 100%;
+      text-align: left; /* ensure paragraphs align to left */
+      margin-left: 0;
+      
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+    }
+
+    &:after {
+      content: '</body>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #00ff7f;
+      font-size: 18px;
+      position: absolute;
+      left: -15px;
+      bottom: -30px;
+      opacity: 0.6;
+    }
+  }
+}
+
 .stage-cube-cont {
-  width: 50%;
+  width: 36%;
   height: 100%;
   top: 0;
   padding-top: 18%;
@@ -16,45 +117,47 @@
   animation-duration: 12s;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
-  margin-left: calc(50% - 100px);
+  /* center the cube inside its narrower container */
+  margin-left: calc(50% - 90px);
 
   div {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border: 1px solid #ccc;
     background: rgba(255, 255, 255, 0.4);
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
   }
+  margin-left: calc(50% - 80px);
 
   .face1 {
     transform: translateZ(100px);
-    color: #dd0031;
+    color: #4B8BBE;
   }
   .face2 {
     transform: rotateY(90deg) translateZ(100px);
-    color: #f06529;
+    color: #61DAFB;
   }
   .face3 {
     transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    color: #28a4d9;
+    color: #68A063;
   }
   .face4 {
     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    color: #5ed4f4;
+    color: #EFD81D;
   }
   .face5 {
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    color: #efd81d;
+    color: #0DB7ED;
   }
   .face6 {
     transform: rotateX(-90deg) translateZ(100px);
-    color: #ec4d28;
+    color: #FF9900;
   }
 }
 

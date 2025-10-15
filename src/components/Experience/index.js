@@ -73,9 +73,9 @@ const Experience = () => {
           </h1>
           <p>
             My professional journey spans AI/ML engineering, <br></br>data science, and 
-            education.From building predictive models <br></br>in agritech to leading 
-            tech communities and mentoring<br></br> students, each role has shaped my 
-            approach to solving<br></br> real-world problems with technology. 
+            education. From predictive<br></br>  models in agritech to leading 
+            tech communities <br></br> and mentoring students, each role has shaped my <br></br>
+            approach to solving real-world problems with<br></br> technology. 
           </p>
         </div>
 

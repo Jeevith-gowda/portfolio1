@@ -171,7 +171,7 @@ const Projects = () => {
           <p>
             A showcase of my technical projects spanning AI/ML engineering, data science,
             full-stack development, and distributed systems. Each project represents
-            innovative solutions to complex problems using cutting-edge technologies.
+            innovative solutions to  problems using cutting-edge technologies.
           </p>
           
           {/* Category Filter */}
